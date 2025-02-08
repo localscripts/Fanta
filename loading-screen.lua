@@ -12,7 +12,7 @@ frame.Parent = gui
 
 local tweenService = game:GetService("TweenService")
 
--- Adjustable speeds
+-- Adjustable speeds!
 local spinSpeed = 9999 -- Lower value = faster spin (e.g., 0.5 = 2 spins per second)
 local fadeSpeed = 1.5 -- Duration of fade-in and fade-out
 local displayTime = 3 -- Time before fading out
