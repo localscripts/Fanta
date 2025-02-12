@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+body, html {
+    height: 100%;
+    background-color: #FF7F00; /* Fanta orange */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.fanta-icon {
+    width: 150px;
+    height: auto;
+    pointer-events: none;
+}
+
+.copy-box {
+    background-color: #134683;
+    color: #ffffff; /* White text color */
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.copy-box:hover {
+    background-color: #001AFF;
+    transform: scale(1.05);
+}
