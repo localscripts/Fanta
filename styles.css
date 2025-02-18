@@ -10,7 +10,7 @@
 
 body, html {
     height: 100%;
-    background-color: #FF7F00; /* Fanta orange */
+    background-color: #1E1428; /* Fanta orange */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,7 +31,7 @@ body, html {
 }
 
 .copy-box {
-    background-color: #134683;
+    background-color: #382649;
     color: #ffffff; /* White text color */
     padding: 10px 20px;
     border-radius: 8px;
@@ -42,6 +42,6 @@ body, html {
 }
 
 .copy-box:hover {
-    background-color: #001AFF;
+    background-color: #543a6d;
     transform: scale(1.05);
 }

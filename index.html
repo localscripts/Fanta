@@ -5,37 +5,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Fanta - Pet Simulator 2</title>
         <link rel="stylesheet" href="styles.css">
-        <link rel="icon" type="image/x-icon" href="fanta.ico">
+        <link rel="icon" type="image/x-icon" href="assets/fanta.ico">
 
-            <!-- Meta Tags -->
-    <meta name="title" content="Fanta - Pet Simulator 2">
-    <meta name="description" content="Fanta - The tool for Pet Simulator 2 automation.">
+        <!-- Meta Tags -->
+        <meta name="title" content="Fanta - Pet Simulator 2">
+        <meta name="description" content="Fanta - The tool for Pet Simulator 2 automation.">
 
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Fanta - Pet Simulator 2">
-    <meta property="og:description" content="Fanta - The tool for Pet Simulator 2 automation.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://fanta.voxlis.net">
-    <meta property="og:image" content="https://fanta.voxlis.net/fanta-backround.png">
-    <meta property="og:image:width" content="1920">
-    <meta property="og:image:height" content="1080">
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="Fanta - Pet Simulator 2">
+        <meta property="og:description" content="Fanta - The tool for Pet Simulator 2 automation.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://fanta.voxlis.net">
+        <meta property="og:image" content="https://fanta.voxlis.net/assets/fanta-backround.png">
+        <meta property="og:image:width" content="1920">
+        <meta property="og:image:height" content="1080">
 
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Fanta - Pet Simulator 2">
-    <meta name="twitter:description" content="Fanta - The tool for Pet Simulator 2 automation.">
-    <meta name="twitter:image" content="https://fanta.voxlis.net/fanta-backround.png">
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Fanta - Pet Simulator 2">
+        <meta name="twitter:description" content="Fanta - The tool for Pet Simulator 2 automation.">
+        <meta name="twitter:image" content="https://fanta.voxlis.net/assets/fanta-backround.png">
 
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#FF7F00">
+        <!-- Theme Color -->
+        <meta name="theme-color" content="#1E1428">
     </head>
 <body>
     <div class="icon-container">
-        <img src="fanta2.png" alt="Fanta Icon" class="fanta-icon">
+        <img src="assets/fanta2.png" alt="Fanta Icon" class="fanta-icon">
     </div>
+
+    <div class="copy-box" onclick="copyText()">
+        Click to Copy: <span id="copy-text">Fanta</span>
+    </div>
+
     <script>
         function copyText() {
-            const text = "loadstring(game:HttpGet('https://fanta.voxlis.net/loader.lua'))()"; // Text to copy
+            const text = "loadstring(game:HttpGet('https://fanta.voxlis.net/main.lua'))()"; // Text to copy
             navigator.clipboard.writeText(text).then(() => {
                 const copyBox = document.querySelector(".copy-box");
                 copyBox.innerText = "Copied!";
@@ -47,6 +52,5 @@
             });
         }
     </script>
-    
 </body>
 </html>
