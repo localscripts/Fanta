@@ -34,23 +34,8 @@
         <img src="assets/fanta2.png" alt="Fanta Icon" class="fanta-icon">
     </div>
 
-    <div class="copy-box" onclick="copyText()">
-        Click to Copy: <span id="copy-text">Fanta</span>
+    <div class="copy-box" onclick="window.location.href='https://github.com/localscripts/Fanta'">
+        Start Sippin' <span id="copy-text">Fanta</span>
     </div>
-
-    <script>
-        function copyText() {
-            const text = "loadstring(game:HttpGet('https://fanta.voxlis.net/main.lua'))()"; // Text to copy
-            navigator.clipboard.writeText(text).then(() => {
-                const copyBox = document.querySelector(".copy-box");
-                copyBox.innerText = "Copied!";
-                setTimeout(() => {
-                    copyBox.innerHTML = `Click to Copy: <span id="copy-text">Fanta</span>`;
-                }, 1500);
-            }).catch(err => {
-                console.error("Failed to copy:", err);
-            });
-        }
-    </script>
 </body>
 </html>

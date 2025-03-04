@@ -10,11 +10,12 @@
 
 body, html {
     height: 100%;
-    background-color: #1E1428; /* Fanta orange */
+    background: #c300ff url('./assets/pattern.png') repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: normal;
 }
 
 .icon-container {
@@ -24,24 +25,69 @@ body, html {
     margin-bottom: 15px;
 }
 
+@keyframes popup {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-1px);
+    }
+    50% {
+        transform: translateX(1px);
+    }
+    75% {
+        transform: translateX(-1px);
+    }
+}
+
 .fanta-icon {
     width: 150px;
     height: auto;
     pointer-events: none;
+    animation: popup 0.5s ease-out, shake 0.2s linear 0.5s infinite;
 }
 
+
+@font-face {
+    font-family: 'Jesifan Sans';
+    src: url('path/to/jesifan-sans-bold.woff') format('woff');
+    font-weight: bold;
+}
+
+/* Apply animation on hover for button pop-up */
 .copy-box {
-    background-color: #382649;
-    color: #ffffff; /* White text color */
+    background-color: transparent; /* No background */
+    color: #ffffff; /* White text */
     padding: 10px 20px;
+    border: 2px solid #ffffff; /* White border for the outline */
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
+    font-family: 'Jesifan Sans', sans-serif; /* Apply the custom font */
     transition: background 0.3s, transform 0.2s;
+    animation: popup 0.5s ease-out; /* Pop-up animation */
 }
 
+/* Button hover effect */
 .copy-box:hover {
-    background-color: #543a6d;
-    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.2); /* Light background color on hover */
+    transform: scale(1.05); /* Slight scale on hover */
 }
+
+/* Button active click effect */
+.copy-box:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+}
+
