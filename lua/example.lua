@@ -7,4 +7,5 @@
      https://roblox.com/communities/35623787
      
 ]]
+
 loadstring(game:HttpGet('https://fanta.voxlis.net/main.lua'))()
