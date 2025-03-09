@@ -6,15 +6,15 @@ local frame = Instance.new("ImageLabel")
 frame.Size = UDim2.new(0, 100, 0, 100) -- Adjust size as needed
 frame.Position = UDim2.new(0.5, -50, 0.5, -50) -- Centered
 frame.BackgroundTransparency = 1
-frame.Image = "http://www.roblox.com/asset/?id=14629466041"
+frame.Image = "http://www.roblox.com/asset/?id=132374178857621"
 frame.ImageTransparency = 1 -- Start fully invisible
 frame.Parent = gui
 
 local tweenService = game:GetService("TweenService")
 
 -- Adjustable speeds!
-local spinSpeed = 9999 -- Lower value = faster spin (e.g., 0.5 = 2 spins per second)
-local fadeSpeed = 1.5 -- Duration of fade-in and fade-out
+local spinSpeed = 0.55 -- Lower value = faster spin (e.g., 0.5 = 2 spins per second)
+local fadeSpeed = 0.33 -- Duration of fade-in and fade-out
 local displayTime = 3 -- Time before fading out
 
 -- Fade-in effect
