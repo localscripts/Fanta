@@ -46,4 +46,4 @@ for _, player in pairs(Players:GetPlayers()) do
 end
 
 -- Recheck when a new player is added
-Players.PlayerAdded:Connect(onPlayerAdded
+Players.PlayerAdded:Connect(onPlayerAdded)
