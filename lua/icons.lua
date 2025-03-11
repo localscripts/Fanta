@@ -8,7 +8,7 @@ local rankToIconID = {
     [3] = "http://www.roblox.com/asset/?id=134359082397174",  -- Extreme // Grape Fanta
     [253] = "http://www.roblox.com/asset/?id=134719826785313", -- Promoter // Pink Fanta
     [254] = "http://www.roblox.com/asset/?id=93377408103568", -- manager // Orange Fanta
-    [255] = "http://www.roblox.com/asset/?id=93377408103568", -- Owner // Orange Fanta
+    [255] = "http://www.roblox.com/asset/?id=93377408103568" -- Owner // Orange Fanta
 }
 
 local function updatePlayerIcon(player)
