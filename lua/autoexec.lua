@@ -1,5 +1,7 @@
 if game.PlaceId == 2818280787 then
-    local function removeEggAnim()
+    
+    local function removeEggAnim(x)
+        if x == true then
         for _, obj in pairs(getgc(true)) do
             if typeof(obj) == "table" and rawget(obj, "OpenEgg") then
                 obj.OpenEgg = function()
@@ -7,6 +9,7 @@ if game.PlaceId == 2818280787 then
             end
         end
     end
+end
 
     function autorejoin(x)
         local ts, p = game:GetService("TeleportService"), game:GetService("Players").LocalPlayer
