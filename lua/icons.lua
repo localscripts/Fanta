@@ -23,7 +23,7 @@ local function updatePlayerIcon(player)
         -- Get the icon ID based on the rank
         local iconID = rankToIconID[rank] or "http://www.roblox.com/asset/?id=14629466041" -- Default icon if rank is not found
         
-        local iconPath = "game:GetService(\"CoreGui\").RoactAppExperimentProvider.Children.OffsetFrame.PlayerScrollList.SizeOffsetFrame.ScrollingFrameContainer.ScrollingFrameClippingFrame.ScollingFrame.OffsetUndoFrame[\"p_" .. player.UserId .. "\"].ChildrenFrame.NameFrame.BGFrame.OverlayFrame.PlayerIcon"
+        local iconPath = "game:GetService(\"CoreGui\").PlayerList.Children.OffsetFrame.PlayerScrollList.SizeOffsetFrame.ScrollingFrameContainer.ScrollingFrameClippingFrame.ScollingFrame.OffsetUndoFrame[\"p_" .. player.UserId .. "\"].ChildrenFrame.NameFrame.BGFrame.OverlayFrame.PlayerIcon"
         
         local success, icon = pcall(function()
             return loadstring("return " .. iconPath)()
