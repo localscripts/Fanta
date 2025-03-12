@@ -68,6 +68,7 @@ body, html {
 
 /* Apply animation on hover for button pop-up */
 .copy-box {
+    margin-bottom: 10px; /* Adds space below each button */
     font-family: "Josefin Sans", sans-serif;
     background-color: transparent; /* No background */
     color: #ffffff; /* White text */
