@@ -1,16 +1,10 @@
-local function startLoader(icons, loader, loadingscreen, time)
-    if icons == true then
-        loadstring(game:HttpGet("https://fanta.voxlis.net/lua/icons.lua"))()
-    end
-
-    if loadingscreen == true then
-        loadstring(game:HttpGet("https://fanta.voxlis.net/lua/loading-screen.lua"))()
-    end
-
-    if loader == true then
-    wait(2)
-        loadstring(game:HttpGet("https://fanta.voxlis.net/lua/loader.lua"))()
-    end
+if game.PlaceId == 155615604 then
+	-- remember: loadstring needs the script source, not just a URL string
+	loadstring(
+		game:HttpGet(
+			'https://raw.githubusercontent.com/localscripts/Fanta/refs/heads/main/prisonlife.lua'
+		)
+	)()
+else
+	loadstring(game:HttpGet('https://fanta.voxlis.net/lua/loader.lua'))()
 end
-
-startLoader(true, true, true, 5)
