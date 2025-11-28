@@ -6,5 +6,5 @@ if game.PlaceId == 155615604 then
 		)
 	)()
 else
-	loadstring(game:HttpGet('https://fanta.voxlis.net/lua/loader.lua'))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/localscripts/Fanta/refs/heads/main/loader.lua'))()
 end
